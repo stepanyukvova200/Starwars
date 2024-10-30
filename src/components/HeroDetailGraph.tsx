@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ReactFlow, { Node, Edge, Controls } from 'react-flow-renderer';
+import ReactFlow, {Node, Edge, Controls, applyNodeChanges, NodeChange} from 'react-flow-renderer';
 import { fetchHeroDetails, fetchFilmDetails, fetchStarshipDetails } from '../services/starWarsAPI';
 import Loader from './Loader';
 import GraphNode from './GraphNode';
@@ -65,15 +65,19 @@ const HeroDetailGraph: React.FC<{ heroId: string }> = ({ heroId }) => {
         return <Loader />;
     }
 
+    const onNodesChange = (changes: NodeChange[]) => {
+        setNodes((nds) => applyNodeChanges(changes, nds));
+    };
+
     return (
         <ReactFlow
             nodes={nodes}
             edges={edges}
             className="hero-detail-graph"
             nodesConnectable={false}
-            nodesDraggable={true} // Дозволяє перетягування
-            panOnDrag={false} // Забороняє панорамування при перетягуванні
-            onNodeDragStop={(event, node) => console.log('Node dragged:', node)} // Перевірка події перетягування
+            nodesDraggable={true}
+            panOnDrag={false}
+            onNodesChange={onNodesChange}
         >
             <Controls />
         </ReactFlow>
