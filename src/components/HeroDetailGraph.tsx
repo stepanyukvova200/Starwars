@@ -76,7 +76,6 @@ const HeroDetailGraph: React.FC<{ heroId: string }> = ({ heroId }) => {
             className="hero-detail-graph"
             nodesConnectable={false}
             nodesDraggable={true}
-            panOnDrag={false}
             onNodesChange={onNodesChange}
         >
             <Controls />
