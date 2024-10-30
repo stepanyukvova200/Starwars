@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import HeroList from './components/HeroList';
+import HeroDetailGraph from './components/HeroDetailGraph';
+import './styles/App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App: React.FC = () => {
+    const [selectedHeroId, setSelectedHeroId] = useState<string | null>(null);
+
+    return (
+        <div className="app-container">
+            <div className="sidebar">
+                <HeroList onHeroSelect={setSelectedHeroId} />
+            </div>
+            <div className="content">
+                {selectedHeroId && <HeroDetailGraph heroId={selectedHeroId} />}
+            </div>
+        </div>
+    );
+};
 
 export default App;

@@ -1,0 +1,39 @@
+.hero-list {
+    max-width: 100%;
+    background-color: rgba(20, 20, 30, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.hero-list-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-list-item {
+    padding: 8px;
+    border-bottom: 1px solid #444;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.hero-list-item:hover {
+    color: #00d8ff;
+}
+
+.load-more {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007cf0;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.load-more:hover {
+    background-color: #005bb5;
+}
