@@ -4,7 +4,7 @@
     background-color: rgba(10, 15, 30, 0.9);
 }
 
-.react-flow__controls {
+.hero-detail-graph .react-flow__controls {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -18,7 +18,7 @@
     pointer-events: auto;
 }
 
-.react-flow__controls-button {
+.hero-detail-graph .react-flow__controls-button {
     background-color: #007cf0;
     border: none;
     color: #ffffff;
@@ -29,19 +29,19 @@
     transition: background-color 0.3s ease;
 }
 
-.react-flow__controls-button:hover {
+.hero-detail-graph .react-flow__controls-button:hover {
     background-color: #005bb5;
 }
 
-.react-flow__controls-button:active {
+.hero-detail-graph .react-flow__controls-button:active {
     background-color: #004494;
 }
 
-.react-flow__controls-button:focus {
+.hero-detail-graph .react-flow__controls-button:focus {
     outline: none;
 }
 
-.react-flow__renderer {
+.hero-detail-graph .react-flow__renderer {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -53,7 +53,7 @@
     border-radius: 8px;
 }
 
-.react-flow__node {
+.hero-detail-graph .react-flow__node {
     background-color: #282c34;
     color: #282c34;
     border: 2px solid #007cf0;
@@ -65,17 +65,17 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.react-flow__node:hover {
+.hero-detail-graph .react-flow__node:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
 }
 
-.react-flow__node.selected {
+.hero-detail-graph .react-flow__node.selected {
     border-color: #005bb5;
     box-shadow: 0 6px 16px rgba(0, 123, 240, 0.5);
 }
 
-.react-flow__node:focus {
+.hero-detail-graph .react-flow__node:focus {
     outline: none;
     border-color: #ff9800;
 }
