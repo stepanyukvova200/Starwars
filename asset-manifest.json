@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/StarNavi/static/css/main.7be20808.css",
-    "main.js": "/StarNavi/static/js/main.cb64e5e1.js",
-    "static/js/453.69140388.chunk.js": "/StarNavi/static/js/453.69140388.chunk.js",
-    "index.html": "/StarNavi/index.html",
-    "main.7be20808.css.map": "/StarNavi/static/css/main.7be20808.css.map",
-    "main.cb64e5e1.js.map": "/StarNavi/static/js/main.cb64e5e1.js.map",
-    "453.69140388.chunk.js.map": "/StarNavi/static/js/453.69140388.chunk.js.map"
+    "main.css": "/Starwars/static/css/main.7be20808.css",
+    "main.js": "/Starwars/static/js/main.61b4db81.js",
+    "static/js/453.e1fd60f6.chunk.js": "/Starwars/static/js/453.e1fd60f6.chunk.js",
+    "index.html": "/Starwars/index.html",
+    "main.7be20808.css.map": "/Starwars/static/css/main.7be20808.css.map",
+    "main.61b4db81.js.map": "/Starwars/static/js/main.61b4db81.js.map",
+    "453.e1fd60f6.chunk.js.map": "/Starwars/static/js/453.e1fd60f6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7be20808.css",
-    "static/js/main.cb64e5e1.js"
+    "static/js/main.61b4db81.js"
   ]
 }
